@@ -52,6 +52,5 @@ class Cell:
         line_color = "red"
         if undo:
             line_color = "gray"
-        print(f"Drawing line from ({x1},{y1}) to ({x2}, {y2})")
         line = Line(Point(x1, y1), Point(x2, y2))
         self._win.draw_line(line, line_color)
