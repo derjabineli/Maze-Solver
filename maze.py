@@ -88,9 +88,9 @@ class Maze():
             self._break_walls_r(direction[0], direction[1])
             
     def _reset_cells_visited(self):
-        for i in range(self._num_rows):
-            for j in range(self._num_cols):
-                self._cells[i][j].visited = False
+        for row in self._cells:
+            for cell in row:
+                cell.visited = False
 
     def _animate(self):
         self._win.redraw()
